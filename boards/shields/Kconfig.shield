@@ -1,0 +1,5 @@
+config SHIELD_ASTRA_LEFT
+    def_bool $(shields_list_contains,astra_left)
+
+config SHIELD_ASTRA_RIGHT
+    def_bool $(shields_list_contains,astra_right)
