@@ -40,7 +40,7 @@
         // Row 2: lower finger keys
             RC(2, 0) RC(2, 1) RC(2, 2) RC(2, 3) RC(2, 4) RC(2, 5)    RC(2, 15) RC(2, 14) RC(2, 13) RC(2, 12) RC(2, 11) RC(2, 10)
         // Row 3: thumb keys
-                              RC(3, 6) RC(3, 7) RC(3, 8) RC(3, 9)    RC(3, 20) RC(3, 19) RC(3, 18) RC(3, 17)
+                              RC(3, 6) RC(3, 7) RC(3, 8) RC(3, 9)    RC(3, 19) RC(3, 18) RC(3, 17) RC(3, 16)
         >;
     };
 
