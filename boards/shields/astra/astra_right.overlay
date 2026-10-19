@@ -3,3 +3,7 @@
 &default_transform {
     col-offset = <10>;
 };
+
+&vfx_engine {
+    strip-offset = <21>;
+};

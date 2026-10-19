@@ -1,0 +1,35 @@
+#include <dt-bindings/zmk/vfx.h>
+
+/ {
+    vfx_engine: vfx_engine {
+        compatible = "zmk,vfx-engine";
+        status = "okay";
+        virtual-length = <42>;
+        strip-offset = <0>;
+        default-scene = <&astra_cross>;
+    };
+
+    astra_vfx {
+        astra_all_leds: all_leds {
+            compatible = "zmk,vfx-zone";
+            range = <0 42>;
+        };
+
+        astra_cross: cross {
+            compatible = "zmk,vfx-scene";
+            display-name = "Cross";
+
+            cross {
+                compatible = "zmk,vfx-layer-cross";
+                zone = <&astra_all_leds>;
+                color = <VFX_HSB(180, 100, 100)>;
+                axes = <VFX_CROSS_BOTH>;
+                radius = <0>;
+                thickness = <4>;
+                decay-ms = <500>;
+            };
+        };
+    };
+};
+
+#include "astra-led-map.dtsi"

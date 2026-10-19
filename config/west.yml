@@ -4,11 +4,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    # Additional modules containing boards/shields/custom code can be listed here as well
-    # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
+    - name: pr0dt0s
+      url-base: https://github.com/pr0dt0s
   projects:
     - name: zmk
       remote: zmkfirmware
+      revision: main
       import: app/west.yml
+    - name: zmk-advanced-underglow-effects-vfx
+      remote: pr0dt0s
+      revision: main
   self:
     path: config
